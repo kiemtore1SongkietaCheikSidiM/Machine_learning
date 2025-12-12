@@ -1,0 +1,14 @@
+flask
+transformers
+torch
+flask-sqlalchemy
+flask-login
+flask-bcrypt
+nltk
+twilio
+python-dotenv
+gunicorn
+Jinja2
+itsdangerous
+Werkzeug
+click

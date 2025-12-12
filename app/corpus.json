@@ -1,0 +1,219 @@
+{
+    "intents": [
+        {
+            "tag": "Salutation",
+            "patterns": ["Bonjour", "Salut", "Coucou", "Yo", "Bonsoir", "Hey"],
+            "responses": ["Bonjour 👋 ! Je suis votre assistant santé maternelle et infantile. Comment puis-je vous aider aujourd’hui ? 😊"]
+        },
+        {
+            "tag": "signes_grossesse",
+            "patterns": ["Quels sont les signes de la grossesse ?", "Comment savoir si je suis enceinte ?", "Symptômes de grossesse", "Comment puis-je m'assurer que je suis enceinte ?"],
+            "responses": ["Les signes courants de la grossesse incluent l'absence de règles, les nausées matinales, la fatigue, les seins sensibles et les envies fréquentes d'uriner. Si vous pensez être enceinte, il est recommandé de faire un test de grossesse et de consulter un professionnel de santé."]
+        },
+        {
+            "tag": "Etapes_grossesse",
+            "patterns": ["Quelles sont les étapes de la grossesse ?", "Comment se déroule une grossesse ?", "Phases de la grossesse", "Quels sont les trimestres de la grossesse ?"],
+            "responses": ["La grossesse est généralement divisée en trois trimestres : Trimestre 1 : L’embryon mesure quelques millimètres puis devient fœtus. Son cœur commence à battre, les organes se développent et les premiers mouvements apparaissent. Trimestre 2 : Le fœtus grandit rapidement, les organes continuent de se développer et les mouvements deviennent plus perceptibles. Trimestre 3 : Le fœtus prend du poids, les organes se préparent à fonctionner de manière autonome et la mère peut ressentir des contractions de Braxton Hicks."]
+        },
+        {
+            "tag": "definition_grossesse",
+            "patterns": ["Qu'est-ce que la grossesse ?", "Définition de la grossesse", "C'est quoi la grossesse ?", "Expliquez-moi la grossesse."],
+            "responses": ["La grossesse est un état physiologique chez la femme où un embryon ou un fœtus se développe dans l'utérus. Elle commence par la fécondation de l'ovule par le spermatozoïde et dure environ 40 semaines, se terminant par l'accouchement."]
+        },
+        {
+            "tag": "Alimentation_grossesse",
+            "patterns": ["Quelle alimentation adopter pendant la grossesse ?", "Conseils nutritionnels pour les femmes enceintes", "Que manger pendant la grossesse ?", "Recommandations alimentaires pour la grossesse.", "Que puis-je manger pendant ma grossesse ?"],
+            "responses": ["Pendant la grossesse, il est important d'adopter une alimentation équilibrée et variée. Il est recommandé de consommer des fruits et légumes, des protéines maigres (comme le poulet, le poisson, les légumineuses), des produits laitiers riches en calcium, des céréales complètes et de boire beaucoup d'eau. Évitez les aliments crus ou mal cuits, les fromages à pâte molle non pasteurisés, et limitez la consommation de caféine et d'aliments riches en sucre ou en graisses saturées."]
+        },
+        {
+            "tag": "contractions_grossesse",
+            "patterns": ["Quelles sont les contractions pendant la grossesse ?", "Comment reconnaître les contractions de grossesse ?", "Types de contractions pendant la grossesse", "Que sont les contractions de Braxton Hicks ?", "Est-il normal d'avoir des contractions pendant la grossesse ?"],
+            "responses": ["Des contractions occasionnelles, irrégulières et indolores (contractions de Braxton Hicks) sont normales. Cependant, des contractions régulières et rapprochées peuvent être un signe de début de travail et nécessitent un avis médical immédiat."]
+        },
+        {
+            "tag": "complications_grossesse",
+            "patterns": ["Quelles sont les complications courantes pendant la grossesse ?", "Quels sont les risques associés à la grossesse ?", "Problèmes de santé pendant la grossesse", "Quelles sont les complications possibles durant la grossesse ?"],
+            "responses": ["Les complications courantes incluent l'hypertension artérielle (pré-éclampsie), le diabète gestationnel, la menace d'accouchement prématuré et les saignements. Un suivi médical régulier est essentiel pour les détecter et les gérer précocement."]
+        },
+        {
+            "tag": "exercice_grossesse",
+            "patterns": ["Quels exercices sont sûrs pendant la grossesse ?", "Puis-je faire de l'exercice pendant la grossesse ?", "Activités physiques recommandées pour les femmes enceintes", "Quels types d'exercices puis-je faire en étant enceinte ?"],
+            "responses": ["Oui, l'exercice modéré est généralement sûr et bénéfique pendant la grossesse. Des activités comme la marche, la natation, le yoga prénatal et les exercices de renforcement musculaire légers sont recommandés. Cependant, il est important de consulter votre professionnel de santé avant de commencer tout programme d'exercice."]
+        },
+        {
+            "tag": "travail_grossesse",
+            "patterns": ["Puis-je travailler pendant la grossesse ?", "Est-il sûr de travailler en étant enceinte ?", "Travail et grossesse", "Quels sont les conseils pour travailler pendant la grossesse ?"],
+            "responses": ["Dans la plupart des cas, il est possible de continuer à travailler. Cependant, les métiers impliquant une forte sollicitation physique, le stress intense ou l'exposition à des produits chimiques peuvent nécessiter des ajustements ou un arrêt de travail."]
+        },
+        {
+            "tag": "definition_soins_prenataux",
+            "patterns": ["Qu'est-ce que les soins prénataux ?", "Définition des soins prénataux", "C'est quoi les soins prénataux ?", "Expliquez-moi les soins prénataux."],
+            "responses": ["Les soins prénataux sont les soins médicaux et les consultations que reçoit une femme enceinte tout au long de sa grossesse. Ils visent à surveiller la santé de la mère et du bébé, à détecter et prévenir les complications, et à fournir des conseils sur la nutrition, l'exercice et le mode de vie pendant la grossesse."]
+        },
+        {
+            "tag": "temps_soins_prenataux",
+            "patterns": ["Quand dois-je commencer les soins prénataux ?", "À quel moment débuter les soins prénataux ?", "Début des soins prénataux", "Quand prendre rendez-vous pour les soins prénataux ?"],
+            "responses": ["Il est recommandé de commencer les soins prénataux dès que vous découvrez que vous êtes enceinte, idéalement au cours du premier trimestre. Cela permet de surveiller la santé de la mère et du bébé dès le début de la grossesse."]
+        },
+        {
+            "tag": "deroulement_soins_prenataux",
+            "patterns": ["Que se passe-t-il lors des soins prénataux ?", "Comment se déroulent les soins prénataux ?", "Processus des soins prénataux", "À quoi s'attendre pendant les soins prénataux ?"],
+            "responses": ["Les consultations comprennent généralement un examen physique, une prise de poids et de tension artérielle, des analyses d'urine et de sang, et des échographies pour surveiller la croissance et le bien-être du bébé. Des conseils sur la nutrition, l'exercice et le mode de vie sont également fournis."]
+        },
+        {
+            "tag": "nombre_soins_prenataux",
+            "patterns": ["Combien de consultations prénatales sont nécessaires ?", "Nombre de visites prénatales recommandées ?", "Fréquence des soins prénataux", "Combien de rendez-vous prénataux dois-je avoir pendant ma grossesse ?"],
+            "responses": ["En général, il est recommandé d'avoir environ 8 à 12 consultations prénatales tout au long de la grossesse, avec une fréquence accrue au fur et à mesure que la date d'accouchement approche. Cependant, le nombre exact peut varier en fonction des besoins individuels et des recommandations de votre professionnel de santé."]
+        },
+        {
+            "tag": "importance_soins_prenataux",
+            "patterns": ["Pourquoi les soins prénataux sont-ils importants ?", "Importance des soins prénataux", "Rôle des soins prénataux", "Pourquoi devrais-je suivre des soins prénataux pendant ma grossesse ?"],
+            "responses": ["Les soins prénataux sont essentiels pour assurer la santé et le bien-être de la mère et du bébé. Ils permettent de détecter et de gérer les complications potentielles, de surveiller la croissance et le développement du bébé, et de fournir des conseils sur la nutrition, l'exercice et le mode de vie pendant la grossesse."]
+        },
+        {
+            "tag": "Nutrition_jeune_enfant",
+            "patterns": ["Quelle alimentation pour un jeune enfant ?", "Conseils nutritionnels pour les jeunes enfants", "Que manger pour un bébé de moins de 2 ans ?", "Recommandations alimentaires pour les jeunes enfants.","Pourquoi la nutrition est-elle importante pour les jeunes enfants ?"],
+            "responses": ["Une bonne nutrition est cruciale pour le développement du cerveau, la croissance physique et le renforcement du système immunitaire de l'enfant. Les premières années de vie sont déterminantes pour la santé future."]
+        },
+        {
+            "tag": "recommendations_alimentation_jeune_enfant",
+            "patterns": ["Quelles sont les recommandations alimentaires pour les jeunes enfants ?", "Que devrais-je donner à manger à mon jeune enfant ?", "Conseils alimentaires pour les enfants de moins de 5 ans", "Quels aliments sont recommandés pour les jeunes enfants ?"],
+            "responses": ["L'OMS recommande l'allaitement maternel exclusif pendant les six premiers mois. Ensuite, il est conseillé de poursuivre l'allaitement avec l'introduction d'aliments complémentaires jusqu'à l'âge de deux ans ou plus."]
+        },
+        {
+            "tag": "Vitamines_jeune_enfant",
+            "patterns": ["Quelles vitamines sont importantes pour les jeunes enfants ?", "Suppléments vitaminiques pour les jeunes enfants", "Vitamines essentielles pour les enfants de moins de 5 ans", "Quels sont les besoins en vitamines des jeunes enfants ?"],
+            "responses": ["Oui, la vitamine D est essentielle pour la santé des os et le développement. Les bébés allaités ont souvent besoin d'un supplément de vitamine D, car le lait maternel peut ne pas en contenir suffisamment."]
+        },
+        {
+            "tag": "boissons_jeune_enfant",
+            "patterns": ["Quelles boissons sont appropriées pour les jeunes enfants ?", "Que puis-je donner à boire à mon jeune enfant ?", "Boissons recommandées pour les enfants de moins de 5 ans", "Quels types de boissons sont sûrs pour les jeunes enfants ?","Quand puis-je donner du jus à mon enfant ?"],
+            "responses": ["Il est préférable de privilégier les fruits entiers. Le jus, même dilué, doit être introduit avec modération à partir de 6 mois et servi dans une tasse, jamais dans un biberon, pour éviter les caries dentaires."]
+        },
+        {
+            "tag": "frequence_repas_jeune_enfant",
+            "patterns": ["Combien de repas par jour pour un jeune enfant ?", "Fréquence des repas pour les jeunes enfants", "Combien de fois dois-je nourrir mon jeune enfant par jour ?", "Quelle est la fréquence recommandée des repas pour les enfants de moins de 5 ans ?","À quelle fréquence mon enfant doit-il prendre une collation ?"],
+            "responses": ["Les jeunes enfants ont souvent besoin de manger toutes les trois ou quatre heures. Proposer des collations saines à mi-chemin entre les repas peut aider à maintenir leur niveau d'énergie et à éviter la suralimentation aux repas principaux."]
+        },
+        {
+            "tag": "raison_vaccination_jeune_enfant",
+            "patterns": ["Pourquoi la vaccination est-elle importante pour les jeunes enfants ?", "Importance des vaccins pour les jeunes enfants", "Rôle de la vaccination chez les enfants de moins de 5 ans", "Pourquoi devrais-je faire vacciner mon jeune enfant ?"],
+            "responses": ["La vaccination protège votre enfant contre plusieurs maladies graves et potentiellement mortelles. Elle aide également à protéger la communauté en prévenant la propagation des maladies (immunité collective). Il est important de suivre le calendrier vaccinal recommandé par les autorités de santé."]
+        },
+        {
+            "tag": "Assurance_vaccination_jeune_enfant",
+            "patterns": ["Comment puis-je m'assurer que mon jeune enfant est à jour avec ses vaccinations ?", "Vérification du statut vaccinal des jeunes enfants", "Comment savoir si mon enfant a reçu tous ses vaccins ?", "Que faire pour s'assurer que mon jeune enfant est bien vacciné ?","Les vaccins sont-ils sûrs pour mon enfant ?"],
+            "responses": ["Oui, les vaccins sont très sûrs. Ils subissent des tests rigoureux avant d'être approuvés. Les effets secondaires sont généralement légers et temporaires, comme une légère fièvre ou une rougeur au site d'injection."]
+        },
+        {
+            "tag": "Effets_secondaires_vaccination_jeune_enfant",
+            "patterns": ["Quels sont les effets secondaires courants des vaccins chez les jeunes enfants ?", "Effets secondaires des vaccinations pour les jeunes enfants", "Que puis-je attendre après la vaccination de mon jeune enfant ?", "Quels sont les effets indésirables possibles des vaccins chez les enfants de moins de 5 ans ?","Que faire si mon enfant a une réaction au vaccin ?"],
+            "responses": ["Les effets secondaires courants incluent une légère fièvre, une rougeur ou un gonflement au site d'injection, et parfois de l'irritabilité ou une perte d'appétit. Ces effets sont généralement temporaires et disparaissent en quelques jours. Si vous avez des préoccupations, consultez votre professionnel de santé."]
+        },
+        {
+            "tag": "Definition_calendrier_vaccination_jeune_enfant",
+            "patterns": ["Qu'est-ce qu'un calendrier de vaccination pour les jeunes enfants ?", "Définition du calendrier vaccinal pour les jeunes enfants", "C'est quoi le calendrier de vaccination des enfants de moins de 5 ans ?", "Expliquez-moi le calendrier de vaccination pour les jeunes enfants."],
+            "responses": ["Le calendrier de vaccination est un programme qui indique à quel âge votre enfant doit recevoir des vaccins spécifiques pour être protégé au mieux. Il est important de suivre le calendrier recommandé par les autorités de santé."]
+        },
+        {
+            "tag": "maladie_vaccination",
+            "patterns": ["Que faire si mon enfant est malade le jour de la vaccination ?", "Mon enfant peut-il être vacciné s'il est malade ?", "Vaccination et maladie chez les jeunes enfants", "Que faire si mon enfant a de la fièvre le jour de la vaccination ?"],
+            "responses": ["Si votre enfant a une maladie légère comme un rhume, la vaccination peut généralement avoir lieu. En cas de maladie plus sévère ou de fièvre élevée, le professionnel de santé pourrait décider de reporter la vaccination."]
+        },
+        {
+            "tag": "temps_vaccination",
+            "patterns": ["Quand faire le rappel des vaccins ?", "Calendrier des rappels de vaccination pour les jeunes enfants", "À quel moment dois-je faire les rappels de vaccins pour mon enfant ?", "Quand est-il temps de faire les rappels de vaccination pour les enfants de moins de 5 ans ?"],
+            "responses": ["Les rappels sont essentiels pour maintenir l'immunité. Généralement : DTP à 6 ans, 11-13 ans, 25 ans puis tous les 20 ans. Consultez le calendrier vaccinal officiel pour les détails complets."]
+        },
+        {
+            "tag": "Temps_alllaitement",
+            "patterns": ["Combien de temps devrais-je allaiter mon bébé ?", "Durée recommandée de l'allaitement", "Jusqu'à quel âge devrais-je allaiter mon enfant ?", "Quelle est la durée idéale de l'allaitement ?"],
+            "responses": ["L'Organisation mondiale de la santé (OMS) recommande l'allaitement maternel exclusif pendant les six premiers mois de vie, suivi de l'introduction d'aliments complémentaires tout en continuant l'allaitement jusqu'à l'âge de deux ans ou plus."]
+        },
+        {
+            "tag": "assurance_allaitement",
+            "patterns": ["Comment savoir si mon bébé reçoit assez de lait ?", "Comment être sûr que mon bébé est bien nourri pendant l'allaitement ?", "Signes que mon bébé reçoit suffisamment de lait maternel", "Comment puis-je m'assurer que mon bébé est bien alimenté en allaitant ?"],
+            "responses": ["Signes positifs : prise de poids régulière, couches mouillées fréquentes (6+ par jour), selles régulières, bébé satisfait après les tétées. En cas de doute, consultez un professionnel de santé."]
+        },
+        {
+            "tag": "problèmes_allaitement",
+            "patterns": ["Quels sont les problèmes courants liés à l'allaitement ?", "Difficultés d'allaitement fréquentes", "Quels problèmes puis-je rencontrer en allaitant ?", "Quels sont les défis courants de l'allaitement maternel ?"],
+            "responses": ["Les problèmes courants incluent les douleurs aux mamelons, l'engorgement mammaire, les crevasses, la mastite et les difficultés de succion du bébé. Il est important de consulter un professionnel de santé ou une consultante en lactation pour obtenir de l'aide."]
+        },
+        {
+            "tag": "allaitement_maladie",
+            "patterns": ["Puis-je allaiter si je suis malade ?", "Est-il sûr d'allaiter lorsque je suis malade ?", "Allaitement et maladie maternelle", "Puis-je continuer à allaiter si je suis malade ?"],
+            "responses": ["Dans la plupart des cas, oui. L'allaitement transmet des anticorps qui protègent le bébé. Exceptions : certaines infections graves ou médicaments incompatibles. Consultez toujours votre médecin."]
+        },
+        {
+            "tag": "sommeil_bebe",
+            "patterns": ["Quand mon bébé va-t-il faire ses nuits ?", "À quel âge mon bébé dormira-t-il toute la nuit ?", "Quand puis-je m'attendre à ce que mon bébé fasse ses nuits ?", "À quel moment mon bébé commencera-t-il à dormir toute la nuit ?"],
+            "responses": ["La plupart des bébés commencent à faire leurs nuits entre 3 et 6 mois. Chaque enfant est différent. Créer une routine de coucher aide à établir de bonnes habitudes de sommeil."]
+        },
+        {
+            "tag": "Marche_enfant",
+            "patterns": ["Quand mon enfant va-t-il marcher ?", "À quel âge mon enfant commencera-t-il à marcher ?", "Quand puis-je m'attendre à ce que mon enfant marche ?", "À quel moment mon enfant fera-t-il ses premiers pas ?"],
+            "responses": ["La plupart des enfants marchent entre 9 et 18 mois. Avant cela, ils rampent, se tiennent debout et font leurs premiers pas. Chaque enfant développe à son rythme."]
+        },
+        {
+            "tag": "Parole_enfant",
+            "patterns": ["Quand mon enfant commencera-t-il à parler ?", "À quel âge mon enfant dira-t-il ses premiers mots ?", "Quand puis-je m'attendre à ce que mon enfant parle ?", "À quel moment mon enfant commencera-t-il à parler ?"],
+            "responses": ["La plupart des enfants disent leurs premiers mots entre 10 et 15 mois. Le développement du langage varie, mais encourager la communication et lire des histoires peut aider."]
+        },
+        {
+            "tag": "Urgences_enfant",
+            "patterns": ["Quand dois-je emmener mon enfant aux urgences ?", "Signes d'urgence chez les enfants", "Quels sont les signes qui nécessitent une visite aux urgences pour mon enfant ?", "Quand devrais-je consulter les urgences pour mon enfant ?"],
+            "responses": ["Urgences : fièvre élevée chez nourrisson <3 mois, difficultés respiratoires, convulsions, déshydratation sévère, traumatisme crânien, saignements importants. En cas de doute, appelez le 15."]
+        },
+        {
+            "tag": "Dehydration_enfant",
+            "patterns": ["Comment reconnaître une déshydratation chez l'enfant ?", "Signes de déshydratation chez les jeunes enfants", "Quels sont les symptômes de la déshydratation chez les enfants ?", "Comment savoir si mon enfant est déshydraté ?"],
+            "responses": ["Signes : bouche sèche, absence de larmes, fontanelle creusée (nourrisson), élasticité de la peau diminuée, somnolence, couches sèches. Déshydratation = urgence médicale."]
+        },
+        {
+            "tag": "Prevention_accidents_domestiques",
+            "patterns": ["Comment prévenir les accidents domestiques ?", "Conseils pour éviter les accidents domestiques chez les enfants", "Comment protéger mon enfant des accidents à la maison ?", "Quelles sont les mesures de sécurité pour prévenir les accidents domestiques chez les enfants ?"],
+            "responses": ["Pour prévenir les accidents domestiques, gardez les produits dangereux hors de portée, utilisez des barrières de sécurité, couvrez les prises électriques, ne laissez jamais un enfant sans surveillance dans la baignoire, et sécurisez les meubles instables. Enseignez également à votre enfant les règles de sécurité adaptées à son âge."]
+        },
+        {
+            "tag": "Protection_solaire_enfant",
+            "patterns": ["Comment protéger mon enfant du soleil ?", "Conseils pour la protection solaire des enfants", "Comment éviter les coups de soleil chez les enfants ?", "Quelles sont les mesures pour protéger mon enfant du soleil ?"],
+            "responses": ["Avant 6 mois : éviter l'exposition directe. Après 6 mois : crème solaire SPF 50+, vêtements couvrants, chapeau, lunettes, éviter 11h-16h."]
+        },
+        {
+            "tag": "Pleurs_bebe",
+            "patterns": ["Comment gérer les pleurs de mon bébé ?", "Pourquoi mon bébé pleure-t-il ?", "Que faire quand mon bébé pleure ?", "Comment apaiser les pleurs de mon bébé ?"],
+            "responses": ["Vérifiez les besoins de base : faim, couche, sommeil, température. Techniques apaisantes : bercement, chant, peau à peau, bruit blanc. Si pleurs persistants, consultez."]
+        },
+        {
+            "tag": "méningocoque",
+            "patterns": ["Le vaccin contre le méningocoque B est-il obligatoire ?"],
+            "responses": ["Oui, depuis 2025. Schéma : 1 dose à 3 mois, 1 dose à 5 mois, rappel à 12 mois. Ce vaccin protège contre une forme grave de méningite."]
+        },
+        {
+            "tag": "vaccin_femmes_enceintes",
+            "patterns": ["Les femmes enceintes doivent-elles se faire vacciner ?", "Quels vaccins sont recommandés pour les femmes enceintes ?"],
+            "responses": ["Oui, il est recommandé que les femmes enceintes reçoivent le vaccin contre la grippe et le vaccin dTcaP (diphtérie, tétanos, coqueluche) pour protéger à la fois la mère et le bébé."]
+        },
+        {
+            "tag": "rotavirus",
+            "patterns": ["Le vaccin contre le rotavirus est-il obligatoire ?"],
+            "responses": ["Oui, depuis 2024. Schéma : 2 doses orales à 6 et 10 semaines. Ce vaccin protège contre les gastro-entérites sévères chez les nourrissons."]
+        },
+        {
+            "tag":"Salutation_fin",
+            "patterns": ["Merci", "Au revoir", "Ciao", "À bientôt", "Merci pour votre aide"],
+            "responses": ["Au revoir ! N'hésitez pas à revenir si vous avez d'autres questions. Prenez soin de vous et de votre famille ! 😊"]
+        },
+        {
+            "tag": "Savoir_approximation_grossesse",
+            "patterns": ["Je veux le calendrier de ma grossesse", "Age actuel de ma grossesse", "Combien de semaines de grossesse ai-je ?", "Calculer mon âge de grossesse"],
+            "responses": ["Je peux t’aider à connaître ton calendrier de grossesse ! 😊 Donne-moi ta date prévue d’accouchement (format JJ/MM/AAAA)."]
+        },
+        {
+            "tag": "Approximation_calendrier_vaccination_jeune_enfant",
+            "patterns": ["Quel est le calendrier de vaccination de mon enfant ?", "Calendrier vaccinal pour mon enfant", "Vaccinations à venir pour mon enfant", "Quels vaccins mon enfant doit-il recevoir et quand ?"],
+            "responses": ["Pour t'aider à connaître le calendrier de vaccination de ton enfant, peux-tu me donner sa date de naissance (format JJ/MM/AAAA) ?"]
+        }
+    ]
+}

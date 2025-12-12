@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+<div class="container">
+    <div class="form-container Connexion-container">
+        <!--Formulaire de connection-->
+        <form action="" method="POST">
+            <h2 class="title">Connexion</h2>
+            <div class="input_field">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Nom d'utilisateur" name="username" required />
+            </div>
+            <div class="input_field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Mot de passe" id="password" name="password" required />
+            </div>
+            <button class="btn" id="sign_up_btn">Connexion</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

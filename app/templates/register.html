@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='register.css') }}">
+<div class="container">
+    <div class="form-container Inscription-container">
+        <!-- Formulaire d'inscription-->
+    <form action="" method="POST">
+        <h2 class="title">Inscription</h2>
+        <div class="input_field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Nom" name="first_name" required />
+        </div>
+        <div class="input_field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Prénom" name="last_name" required />
+        </div>
+        <div class="input_field">
+            <i class="fa-solid fa-flag"></i>
+            <input type="text" placeholder="Pays" name="country" required />
+        </div>
+        <div class="input_field">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Nom d'utilisateur" name="username" required />
+        </div>
+        <div class="input_field">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="Numéro de téléphone" name="phone" required />
+        </div>
+        <div class="input_field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Mot de passe" name="password" required />
+        </div>
+        <div class="input_field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Confirmer le mot de passe" name="confirm_password" required />
+        </div>
+        <button class="btn" id="sign_in_btn">Inscription</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

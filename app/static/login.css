@@ -1,0 +1,127 @@
+/* ----------------------
+   GOOGLE FONT
+----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* ----------------------
+   CONTAINER
+----------------------- */
+.container{
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.form-container{
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    animation: fadeIn .5s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to   {opacity: 1; transform: translateY(0);}
+}
+
+/* ----------------------
+   FORM ELEMENTS
+----------------------- */
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+}
+
+.input_field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #f4f6f9;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    transition: .3s;
+}
+
+.input_field i{
+    font-size: 18px;
+    margin-right: 10px;
+    color: #324e7b;
+}
+
+.input_field input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    color: #333;
+}
+
+.input_field:hover{
+    border-color: #a5b8d3;
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #324e7b;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover{
+    background: #253b5c;
+}
+
+/* ----------------------
+   MEDIA QUERIES
+----------------------- */
+
+/* <= 1000px */
+@media (max-width: 1000px){
+    .form-container{
+        max-width: 450px;
+    }
+}
+
+/* <= 800px */
+@media (max-width: 800px){
+    .form-container{
+        padding: 30px 25px;
+    }
+    .title{
+        font-size: 26px;
+    }
+}
+
+/* <= 700px */
+@media (max-width: 700px){
+    .container{
+        max-width: 380px;
+    }
+}
+
+/* <= 350px */
+@media (max-width: 350px){
+    .form-container{
+        padding: 25px 20px;
+    }
+    .input_field{
+        padding: 10px 12px;
+    }
+    .title{
+        font-size: 22px;
+    }
+}

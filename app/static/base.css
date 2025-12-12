@@ -1,0 +1,250 @@
+/* ----- GLOBAL ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Supprime le scroll horizontal */
+}
+
+body {
+    background: #f6f5f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 20px; /* réduit le risque de dépassement */
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ----- HEADER ----- */
+header {
+    width: 100%;
+    background: #4a63d4;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.containers {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 55px;
+    margin-right: 8px;
+}
+
+.logo h2 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo h2 span {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Logout */
+.btn-logout {
+    background: #e63946;
+    padding: 7px 12px;
+    border-radius: 6px;
+}
+
+.btn-logout:hover {
+    background: #c82333;
+}
+
+/* ----- MAIN ----- */
+.site-main {
+    padding-top: 40px;
+    width: 100%;
+}
+
+/* ----- FOOTER ----- */
+.site-footer {
+    background: #111;
+    padding: 50px 0;
+    color: white;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.footer-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.site-footer h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ----- Social Icons ----- */
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s ease;
+    border: 1px solid #e5e5e5;
+}
+
+/* Hovers spécifiques */
+.social-icons a:nth-child(1):hover {
+    background: #1877F2;
+    color: #fff;
+}
+.social-icons a:nth-child(2):hover {
+    background: #000;
+    color: #fff;
+}
+.social-icons a:nth-child(3):hover {
+    background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+    color: #fff;
+}
+.social-icons a:nth-child(4):hover {
+    background: #FF0000;
+    color: #fff;
+}
+
+/* =======================================================
+   RESPONSIVE MEDIA QUERIES
+   ======================================================= */
+
+/* TABLETTES (≤ 991px) */
+@media (max-width: 991px) {
+    nav ul {
+        gap: 6px;
+    }
+}
+
+/* PHONES (≤ 768px) */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* PETITS TÉLÉPHONES (≤ 480px) */
+@media (max-width: 480px) {
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .container {
+        max-width: 95%;
+        margin: 20px auto;
+    }
+
+    nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+/* GRANDS ÉCRANS (≥ 1600px) */
+@media (min-width: 1600px) {
+    body {
+        font-size: 20px;
+    }
+
+    .footer-inner {
+        max-width: 1400px;
+    }
+}
+

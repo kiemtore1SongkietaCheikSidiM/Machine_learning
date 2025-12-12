@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title if title else "Sante maternelle et infantile" }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</html>
+<body>
+    <header>
+        <div class="containers">
+            <nav>
+                <div class="logo">
+                  <img src="{{ url_for('static', filename='image/logo.png') }}" alt="Logo">
+                  <h2><span>S</span>anté maternelle</h2>
+                </div>
+                <ul>
+                  <li><a href="{{ url_for('main.home') }}">ChatBot</li>
+                  {% if current_user.is_authenticated %}
+                  <li><a href="{{ url_for('main.history') }}">Historique</a></li>
+                  {% endif %}
+                </ul>
+                <ul class="right-nav">
+                   {% if current_user.is_authenticated %}
+                    <li>
+                        <a class="nav-link">
+                          <i class="fa-solid fa-user"></i> {{ current_user.first_name }} {{ current_user.last_name }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.logout') }}" class="btn-logout">
+                            <i class="fa-solid fa-right-from-bracket"></i> Déconnexion
+                        </a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{{ url_for('main.login') }}">
+                            <i class="fa-solid fa-right-to-bracket"></i>Connexion
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('main.register') }}">
+                            <i class="fa-solid fa-right-to-bracket"></i>Inscription
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-main">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="flash-message {{ category }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+    
+    
+    
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <img src="/static/image/logo.png" alt="Logo" style="width:100px;">
+                <h1>À propos de nous</h1>
+                <p>Nous sommes dédiés à la santé maternelle et infantile au Burkina Faso.</p>
+            </div>
+            <div>
+                <h1>Contactez-nous</h1>
+                <a href="mailto:kiemtorecheik@gmaicom"><i class="fas fa-envelope"></i> Envoyer une correspondance</a>
+                <p>Téléphone: +226 56 14 12 34 / 01 27 75 61</p>
+            </div>
+            <div>
+                <h1>Suivez-nous</h1>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body> 
+    
+</html>

@@ -12,3 +12,4 @@ Jinja2
 itsdangerous
 Werkzeug
 click
+sklearn

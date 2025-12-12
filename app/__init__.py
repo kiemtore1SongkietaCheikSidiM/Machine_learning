@@ -1,3 +1,4 @@
+import nltk
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -5,6 +6,28 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from dotenv import load_dotenv
 from flask_login import LoginManager
+
+
+# Créer un dossier pour stocker les données NLTK sur Render
+NLTK_PATH = os.path.join(os.getcwd(), "nltk_data")
+os.makedirs(NLTK_PATH, exist_ok=True)
+
+# Ajouter ce chemin à NLTK
+nltk.data.path.append(NLTK_PATH)
+
+# Téléchargement automatique (ne plante pas sur Render)
+resources = [
+    "punkt",
+    "punkt_tab",
+    "wordnet",
+    "omw-1.4",
+    "stopwords",
+]
+for r in resources:
+    try:
+        nltk.data.find(r)
+    except LookupError:
+        nltk.download(r, download_dir=NLTK_PATH) 
 
 # Charger les variables d'environnement
 load_dotenv()
